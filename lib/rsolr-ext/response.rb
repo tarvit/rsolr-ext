@@ -1,6 +1,6 @@
 module RSolr::Ext::Response
   
-  autoload :Docs, 'rsolr-ext/response/docs'
+  #autoload :Docs, 'rsolr-ext/response/docs'
   autoload :Facets, 'rsolr-ext/response/facets'
   autoload :Spelling, 'rsolr-ext/response/spelling'
   
@@ -14,7 +14,7 @@ module RSolr::Ext::Response
       @original_hash = hash
       @request_path, @request_params = request_path, request_params
       extend Response
-      extend Docs
+      #extend Docs
       extend Facets
       extend Spelling
     end
